@@ -536,8 +536,8 @@
             background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
             color: white;
             text-align: center;
-            padding: 60px 0;
-            padding-bottom: env(safe-area-inset-bottom, 60px);
+            padding: 40px 0;
+            padding-bottom: env(safe-area-inset-bottom, 40px);
         }
 
         .contact-section h2 {
@@ -1161,18 +1161,35 @@
     <!-- Contact Section -->
     <section class="contact-section">
         <div class="container">
-            <h2>지금 바로 문의하세요</h2>
-            <div class="contact-box">
-                <p class="contact-info">박신제 본부장</p>
-                <a href="tel:010-5244-1467" class="phone-link">010-5244-1467</a>
-                <p style="margin-top: 25px; opacity: 0.9; line-height: 1.6;">
+            <h2 style="margin-bottom: 25px;">지금 바로 문의하세요</h2>
+            <div class="contact-box" style="padding: 30px 20px;">
+                <p class="contact-info" style="margin: 10px 0; font-size: clamp(1.1rem, 3vw, 1.3rem);">박신제 본부장</p>
+                <a href="tel:010-5244-1467" class="phone-link" style="font-size: clamp(1.6rem, 4.5vw, 2.2rem); padding: 12px 35px; margin: 15px 0; white-space: nowrap;">010-5244-1467</a>
+                <p style="margin-top: 20px; opacity: 0.9; line-height: 1.5; font-size: clamp(0.95rem, 2.5vw, 1.05rem);">
                     📱 팀 및 지점단위 가입 대환영<br>
                     💻 단체가입시 특별혜택 제공
                 </p>
             </div>
-            <p style="font-weight: 700; margin-top: 30px;">
+            
+            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" style="
+                display: inline-block;
+                background: rgba(255,255,255,0.2);
+                color: white;
+                border: 2px solid rgba(255,255,255,0.3);
+                padding: 12px 30px;
+                font-size: 1rem;
+                font-weight: 600;
+                border-radius: 25px;
+                margin-top: 25px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            " onmouseover="this.style.background='rgba(255,255,255,0.3)'" onmouseout="this.style.background='rgba(255,255,255,0.2)'">
+                ↑ 위로가기
+            </button>
+            
+            <p style="font-weight: 700; margin-top: 25px; font-size: clamp(1rem, 2.5vw, 1.2rem); line-height: 1.5;">
                 Financial Master<br>
-                <span style="font-weight: 400;">전국 45만 재무설계사를 위한 최고의 선택</span>
+                <span style="font-weight: 400; font-size: clamp(0.9rem, 2.5vw, 1rem);">전국 45만 재무설계사를 위한 최고의 선택</span>
             </p>
         </div>
     </section>
